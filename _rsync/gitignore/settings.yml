@@ -1,0 +1,40 @@
+
+# environment: prod / dev
+i18n: 1
+i18n_lang:
+  zh: 中文
+  en: English
+# this is only effective when i18n = 0
+#i18n_lang_default: en
+
+contact_email_to: ozboxoffice@gmail.com
+contact_email_from: ozboxoffice@hotmail.com
+contact_email_reply: ozboxoffice@gmail.com
+
+sitename: 
+  plain:
+    en: OZ Box Office
+    zh: 澳洲电影票务
+  slogon:
+    en: Want to see a movie but don't want to pay $20 dollars for a movie ticket? We offer special price movie ticket and save you heaps! No booking fee, no membership, no hidden cost, no bullshit! Australia only.
+    zh: 想去看电影但又觉得$20多元的电影票太贵？澳洲电影票务为您提供最实惠的打折电影票！免订票费，不用加入会员，打折电影票想买就买！。仅限澳大利亚。
+  url: www.ozboxoffice.com
+
+
+states:
+  - ACT
+  - NSW
+  - NT
+  - QLD
+  - SA
+  - TAS
+  - VIC
+  - WA
+  
+stripe:
+  test_secret_key: sk_test_GfcQOKEmrCyXoe908VUQ6s89
+  test_publishable_key: pk_test_Fz1l8MTLWM1YbpOPuJjIgoZb
+  live_secret_key: sk_live_jRTrhqmzQEGBP8nZBsJCkZwN
+  live_publishable_key: pk_live_nUsFL09fNel5l5ZN1h0nw48T
+  
+backend_per_page: 50
