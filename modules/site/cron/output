@@ -1,0 +1,1943 @@
+https://bookings.eventcinemas.com.au/tickets/order/step2?sessionId=5185875&bookingsource=TelstraMyAccount&requestId=31020a52-d4d7-4532-a760-07ef022f7ddd&token=KNT-4ff7d2d3aacadd30ab157fd23f3579b113f1e980
+
+https://bookings.eventcinemas.com.au/tickets/order/step2?sessionId=5185878&bookingsource=TelstraMyAccount&requestId=5466a125-a887-473b-8d5f-8561784e231b&token=KNT-8feb707f8d0f4eaf78ed7a13a5da7ed578aa5a19
+
+Array
+(
+    [ACT] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => ACT
+                                    [country] => 
+                                    [addressLine1] => 6 Franklin Street 
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2603
+                                    [suburb] => Manuka
+                                )
+
+                            [name] => Greater Union Manuka
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 13
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+    [NSW] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 447/453 King Georges Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2209
+                                    [suburb] => Beverly Hills
+                                )
+
+                            [name] => Beverly Hills
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 68
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Cnr Bray St & Pacific Highway
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2450
+                                    [suburb] => Coffs Harbour
+                                )
+
+                            [name] => Birch Carroll & Coyle Coffs Harbour
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 36
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Corner of Keen and Zadoc Streets
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2480
+                                    [suburb] => Lismore
+                                )
+
+                            [name] => Birch Carroll and Coyle Lismore
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 35
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 2 Cronulla St
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2228
+                                    [suburb] => Cronulla
+                                )
+
+                            [name] => Cronulla
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 67
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Level 7 & 8 Westfield Shopping Town, 500 Oxford Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2022
+                                    [suburb] => Bondi Junction
+                                )
+
+                            [name] => Event Cinemas Bondi Junction
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 64
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Macarthur Square Shopping Centre, Kellicar Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2560
+                                    [suburb] => Campbelltown
+                                )
+
+                            [name] => Event Cinemas Campbelltown
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 65
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Castle Towers Shopping Centre, Cnr Old Northern Road  Castle Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2154
+                                    [suburb] => Castle Hill
+                                )
+
+                            [name] => Event Cinemas Castle Hill
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 53
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 505-525 George Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2000
+                                    [suburb] => Sydney
+                                )
+
+                            [name] => Event Cinemas George St
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 15
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Rooftop Level Westfield shopping Centre, Elizabeth Drive
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2170
+                                    [suburb] => Liverpool
+                                )
+
+                            [name] => Event Cinemas Liverpool
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 19
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Cnr Herring & Waterloo Rd
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2113
+                                    [suburb] => Macquarie Park
+                                )
+
+                            [name] => Event Cinemas Macquarie
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 55
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Level 4 159-175 Church Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2150
+                                    [suburb] => Parramatta
+                                )
+
+                            [name] => Event Cinemas Parramatta
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 66
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [11] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Level 4, Top Ryde City Shopping, 109-135 Blaxland Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2112
+                                    [suburb] => Ryde
+                                )
+
+                            [name] => Event Cinemas Top Ryde City
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 69
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [12] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Cricketers Arms Rd
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2148
+                                    [suburb] => Blacktown
+                                )
+
+                            [name] => Greater Union Blacktown
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 5
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [13] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 100 Burwood Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2134
+                                    [suburb] => Burwood
+                                )
+
+                            [name] => Greater Union Burwood
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 58
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [14] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 1 Stockland Drive
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2285
+                                    [suburb] => Glendale
+                                )
+
+                            [name] => Greater Union Glendale
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 21
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [15] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Level 4 Westfield Shopping Centre, Cnr Pacific Highway & George Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2077
+                                    [suburb] => Hornsby
+                                )
+
+                            [name] => Greater Union Hornsby
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 62
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [16] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Rooftop Westfield Shopping Centre, Cnr Park Road & Cross St
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2220
+                                    [suburb] => Hurstville
+                                )
+
+                            [name] => Greater Union Hurstville
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 7
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [17] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Westfield Shopping Centre, Cnr Kiora Rd & Urunga Pde
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2228
+                                    [suburb] => Miranda
+                                )
+
+                            [name] => Greater Union Miranda
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 8
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [18] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 183-185 King Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2300
+                                    [suburb] => Newcastle
+                                )
+
+                            [name] => Greater Union Newcastle
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 10
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [19] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 4 Memorial Drive
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2529
+                                    [suburb] => Shellharbour
+                                )
+
+                            [name] => Greater Union Shellharbour
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 63
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [20] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Westfield Tuggerah, Cnr Wyong & Gavenlock Roads
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2259
+                                    [suburb] => Tuggerah
+                                )
+
+                            [name] => Greater Union Tuggerah
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 9
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [21] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => 68 Burelli Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2500
+                                    [suburb] => Wollongong
+                                )
+
+                            [name] => Greater Union Wollongong
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 11
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [22] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NSW
+                                    [country] => 
+                                    [addressLine1] => Belvedere Amphitheatre, Centennial Park, Paddington
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 2000
+                                    [suburb] => Sydney
+                                )
+
+                            [name] => Moonlight Cinema Sydney
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 75
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+    [NT] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NT
+                                    [country] => 
+                                    [addressLine1] => Casuarina Square Shopping Centre, 247 Trower Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 810
+                                    [suburb] => Casuarina
+                                )
+
+                            [name] => Birch Carroll & Coyle Casuarina
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 43
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => NT
+                                    [country] => 
+                                    [addressLine1] => Cnr Mitchell & Briggs Streets
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 800
+                                    [suburb] => Darwin
+                                )
+
+                            [name] => Birch Carroll & Coyle Darwin City Cinemas
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 42
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+    [QLD] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Level 1, Australia Fair Shopping Centre 
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4215
+                                    [suburb] => Southport
+                                )
+
+                            [name] => Australia Fair
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 24
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => 10 Little Fletcher St, Townsville City, 4810 
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4810
+                                    [suburb] => Townsville
+                                )
+
+                            [name] => BCC Townsville Central
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 81
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Level 2 Showcase on The Beach, Cnr Griffith & Warners Streets 
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4225
+                                    [suburb] => Coolangatta
+                                )
+
+                            [name] => Birch Carroll & Coyle  Coolangatta
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 33
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Cnr Brisbane & Ellenborough Streets
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4035
+                                    [suburb] => Ipswich 
+                                )
+
+                            [name] => Birch Carroll & Coyle Ipswich City
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 25
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => 30 Gordon Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4740
+                                    [suburb] => Mackay CBD
+                                )
+
+                            [name] => Birch Carroll & Coyle Mackay City
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 39
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => 13-29 Grandview Drive
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4740
+                                    [suburb] => North Mackay
+                                )
+
+                            [name] => Birch Carroll & Coyle Mackay Mount Pleasant
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 50
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Sunshine Plaza Sunseeker Parade
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4558
+                                    [suburb] => Maroochydore
+                                )
+
+                            [name] => Birch Carroll & Coyle Maroochydore
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 38
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Stockland Rockhampton, Highway 1
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4701
+                                    [suburb] => North Rockhampton
+                                )
+
+                            [name] => Birch Carroll & Coyle Rockhampton
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 47
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Westfield Strathpine Shopping Centre, 295 Gympie Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4500
+                                    [suburb] => Strathpine
+                                )
+
+                            [name] => Birch Carroll & Coyle Strathpine
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 26
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Cnr Margaret & Dent Streets
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4350
+                                    [suburb] => Toowoomba
+                                )
+
+                            [name] => Birch Carroll & Coyle Toowoomba Grand Central
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 52
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => 163 Margaret Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4350
+                                    [suburb] => Toowoomba
+                                )
+
+                            [name] => Birch Carroll & Coyle Toowoomba Strand
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 37
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [11] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Cairns Central Shopping Centre, Cnr Mcleod & Spence Streets
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4870
+                                    [suburb] => Cairns
+                                )
+
+                            [name] => Birch Carroll and Coyle Cairns Central
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 44
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [12] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => 108 Grafton St
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4870
+                                    [suburb] => Cairns
+                                )
+
+                            [name] => Birch Carroll and Coyle Cairns City Cinemas
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 41
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [13] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Capalaba Central Shopping Centre, Cnr Moreton Bay Road & Old Cleveland Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4157
+                                    [suburb] => Capalaba
+                                )
+
+                            [name] => Birch Carroll and Coyle Capalaba 
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 30
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [14] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Westfield Carindale, Cnr Creek & Old Cleveland Roads
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4152
+                                    [suburb] => Carindale
+                                )
+
+                            [name] => Birch Carroll and Coyle Carindale
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 28
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [15] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Stockland Shopping Centre, Mulgrave Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4870
+                                    [suburb] => Earlville Cairns
+                                )
+
+                            [name] => Birch Carroll and Coyle Earlville
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 61
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [16] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Morayfield Shopping Centre, Morayfield Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4506
+                                    [suburb] => Morayfield
+                                )
+
+                            [name] => Birch Carroll and Coyle Morayfield
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 31
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [17] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Grand Plaza Shopping Centre, 27-49 Browns Plains Road 
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4118
+                                    [suburb] => Browns Plains
+                                )
+
+                            [name] => Event Cinemas Browns Plains
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 29
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [18] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Westfield Shopping Centre, Cnr Gympie Road  Hamilton Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4032
+                                    [suburb] => Chermside
+                                )
+
+                            [name] => Event Cinemas Chermside
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 56
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [19] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Indooroopilly Shopping Centre, Moggill Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4068
+                                    [suburb] => Indooroopilly
+                                )
+
+                            [name] => Event Cinemas Indooroopilly
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 48
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [20] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Level 3, Myer Centre, Elizabeth Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4000
+                                    [suburb] => Brisbane
+                                )
+
+                            [name] => Event Cinemas Myer Centre
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 59
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [21] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Robina Town Centre, Cnr Collyer Quays  Lido Promenade
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4230
+                                    [suburb] => Robina
+                                )
+
+                            [name] => Event Cinemas Robina
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 34
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [22] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Cnr Sturt & Blackwood Streets
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4810
+                                    [suburb] => Townsville
+                                )
+
+                            [name] => Event Cinemas Townsville City
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 40
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [23] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Cnr Logan and Kessels Roads,
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4122
+                                    [suburb] => Upper Mt Gravatt
+                                )
+
+                            [name] => Garden City
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 49
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [24] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Cnr Bryants Rd & Pacific Hwy
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4129
+                                    [suburb] => Loganholme
+                                )
+
+                            [name] => Loganholme Cinemas
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 79
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [25] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => New Farm Park, Brisbane Powerhouse
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4000
+                                    [suburb] => Brisbane
+                                )
+
+                            [name] => Moonlight Cinema Brisbane
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 74
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [26] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => 29 Sunshine Beach Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4567
+                                    [suburb] => NOOSA HEADS
+                                )
+
+                            [name] => Noosa Cinemas
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 77
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [27] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => QLD
+                                    [country] => 
+                                    [addressLine1] => Level 1, Centro Toombul, 1015 Sandgate Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 4012
+                                    [suburb] => Toombul
+                                )
+
+                            [name] => Toombul
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 78
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+    [SA] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => SA
+                                    [country] => 
+                                    [addressLine1] => Level 3, Westfield Marion. 297 Diagonal Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 5046
+                                    [suburb] => Oaklands Park
+                                )
+
+                            [name] => Event Cinemas Marion
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 22
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => SA
+                                    [country] => 
+                                    [addressLine1] => FS1 470 Torrens Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 5009
+                                    [suburb] => Kilkenny
+                                )
+
+                            [name] => Greater Union Arndale
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 54
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => SA
+                                    [country] => 
+                                    [addressLine1] => Botanic Park, Hackney Rd
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 5000
+                                    [suburb] => Adelaide
+                                )
+
+                            [name] => Moonlight Cinema Adelaide
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 71
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+    [TAS] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => TAS
+                                    [country] => 
+                                    [addressLine1] => Bligh Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Rosny
+                                )
+
+                            [name] => Eastlands
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 358
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => EL
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => TAS
+                                    [country] => 
+                                    [addressLine1] => Cnr Cooper & Eady Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Glenorchy
+                                )
+
+                            [name] => Glenorchy
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 359
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => GL
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => TAS
+                                    [country] => 
+                                    [addressLine1] => 181 Collins Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Hobart
+                                )
+
+                            [name] => Hobart
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 351
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => HB
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => TAS
+                                    [country] => 
+                                    [addressLine1] => 163 Brisbane Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Launceston
+                                )
+
+                            [name] => Launceston
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 355
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => LN
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+    [VIC] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Louis Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Airport West
+                                )
+
+                            [name] => Airport West
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 272
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => AW
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 285-287 Springvale Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Glen Waverley
+                                )
+
+                            [name] => Century City
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 311
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => CC
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 8 Whiteman Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Southbank
+                                )
+
+                            [name] => Crown
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 303
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => CR
+                        )
+
+                    [3] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 619 Doncaster Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Doncaster
+                                )
+
+                            [name] => Doncaster
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 301
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => DR
+                        )
+
+                    [4] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Princess Highway
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Narre Warren
+                                )
+
+                            [name] => Fountain Gate
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 330
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => FG
+                        )
+
+                    [5] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 194-200 Ryrie Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Geelong
+                                )
+
+                            [name] => Geelong
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 121
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => GE
+                        )
+
+                    [6] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Chapel Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => South Yarra
+                                )
+
+                            [name] => Jam Factory
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 323
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => JF
+                        )
+
+                    [7] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 197 Karingal Drive
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Karingal
+                                )
+
+                            [name] => Karingal
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 312
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => KR
+                        )
+
+                    [8] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Burwood Highway
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Wantirna South
+                                )
+
+                            [name] => Knox
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 274
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => KN
+                        )
+
+                    [9] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Royal Botanic Gardens, South Yarra
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 3000
+                                    [suburb] => Melbourne
+                                )
+
+                            [name] => Moonlight Cinema Melbourne
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 73
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [10] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Princes Highway
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Morwell
+                                )
+
+                            [name] => Morwell
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 320
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => MW
+                        )
+
+                    [11] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 200 Camberwell Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => East Hawthorn
+                                )
+
+                            [name] => Rivoli
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 023
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => RV
+                        )
+
+                    [12] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 9-13 Stewart Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Shepparton
+                                )
+
+                            [name] => Shepparton
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 025
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => SH
+                        )
+
+                    [13] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => 1239 Nepean Highway
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Cheltenham
+                                )
+
+                            [name] => Southland
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 282
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => SL
+                        )
+
+                    [14] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Harvester Road
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Sunshine
+                                )
+
+                            [name] => Sunshine
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 309
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => SS
+                        )
+
+                    [15] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => VIC
+                                    [country] => 
+                                    [addressLine1] => Corner of Heath & Derrimut Roads
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 
+                                    [suburb] => Werribee
+                                )
+
+                            [name] => Werribee
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 080
+                                    [cinemaGroup] => VILLAGE
+                                )
+
+                            [brand] => WR
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+    [WA] => stdClass Object
+        (
+            [status] => SUCCESS
+            [error] => 
+            [errorCode] => 
+            [result] => Array
+                (
+                    [0] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => WA
+                                    [country] => 
+                                    [addressLine1] => 57 Liege Street
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 6018
+                                    [suburb] => Innaloo
+                                )
+
+                            [name] => Event Cinemas Innaloo
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 17
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [1] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => WA
+                                    [country] => 
+                                    [addressLine1] => Centro Galleria, Cnr Walter & Old Collier Roads
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 6062
+                                    [suburb] => Morley
+                                )
+
+                            [name] => Greater Union Morley
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 18
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                    [2] => stdClass Object
+                        (
+                            [address] => stdClass Object
+                                (
+                                    [state] => WA
+                                    [country] => 
+                                    [addressLine1] => Synergy Parkland, Kings Park
+                                    [addressLine2] => 
+                                    [addressLine3] => 
+                                    [postcode] => 6000
+                                    [suburb] => Perth
+                                )
+
+                            [name] => Moonlight Cinema Perth
+                            [cinemaId] => stdClass Object
+                                (
+                                    [value] => 72
+                                    [cinemaGroup] => AHL
+                                )
+
+                            [brand] => 
+                        )
+
+                )
+
+            [cmsLabels] => 
+        )
+
+)

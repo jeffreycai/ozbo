@@ -1,0 +1,3 @@
+
+# spam token expire time, in seconds
+spam_token_valid_time: 600
