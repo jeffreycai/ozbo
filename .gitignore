@@ -2,3 +2,4 @@
 /modules/site/cron/cookie.txt
 /modules/static_cache/cache
 /.htaccess
+/modules/database/bootstrap.php
