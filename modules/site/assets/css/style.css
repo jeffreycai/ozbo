@@ -1,0 +1,138 @@
+body {
+  font-family: "MS PGothic","Meiryo","Segoe UI Symbol" !important;
+}
+.container,
+.jumbotron .container {
+  max-width: 768px;
+}
+.navbar-header a {
+  color: #FFF !important;
+}
+.jumbotron {
+  text-align: center;
+  background: #BA2025;
+  color: #FFF;
+  padding-bottom: 20px;
+  margin-top: 50px;
+}
+.jumbotron.general h1 {
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.home .jumbotron {
+  padding-bottom: 30px;
+}
+.home .jumbotron h1 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.home .jumbotron p {
+  margin-bottom: 30px;
+}
+.panel .metainfo {
+  margin-left: 5px;
+}
+#cinema, 
+#movie {
+  margin-bottom: 8px;
+}
+#ticket {
+  width: 68px;
+}
+#loading-cinemas {
+  display: none;
+  position: relative;
+  top: -1px;
+}
+#address {
+  display: none;
+}
+#confirm {
+  text-align: center;
+}
+#powered-by {
+  margin-bottom: 15px;
+}
+#stripe-logo {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+#steps2 {
+  display: none;
+}
+#step4,
+#step5 {
+  margin-top: 15px;
+  display: none;
+}
+#step4 table th {
+  font-weight: normal;
+}
+#details {
+  display: none;
+}
+#modify {
+  text-align: right;
+}
+#modify span {
+  color: #BA2025;
+}
+#modify a {
+  text-decoration: underline;
+}
+
+#options .nav {
+  margin-bottom: 15px;
+}
+#options .nav li a {
+  background: #EEEEEE;
+}
+#options .nav li.active a {
+  background: #FFF;
+}
+#paypal {
+  display: none;
+}
+#pay {
+  text-align: center;
+}
+#exp-month,
+#exp-year {
+  border: 1px solid #ccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  border-radius: 4px;
+  height: 34px;
+  padding: 6px 12px;
+}
+.form-control.has-error {
+  border: 1px solid #BA2025;
+}
+.form-control.dummy {
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  padding: 0px;
+}
+.payment-errors {
+  display: none;
+}
+
+ .validation.text-danger:after {
+content: 'Validation failed';
+}
+.validation.text-success:after {
+content: 'Validation passed';
+}
+
+#footer {
+  padding-top: 30px;
+  border-top: 1px #EEE solid;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-size: 0.8em;
+  color: #555;
+}
+#footer i {
+  color: #B82224;
+}

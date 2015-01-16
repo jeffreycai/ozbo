@@ -1,0 +1,96 @@
+routing:
+  index:
+    path: ^\/?$
+    isSecure: 0
+    i18n: 1
+    controller: site/index
+    static_cache: 900
+  contact:
+    path: ^\/contact$
+    isSecure: 0
+    i18n: 1
+    controller: site/contact
+    static_cache: 300
+  movie_session:
+    path: ^\/movie\-sessions$
+    isSecure: 0
+    i18n: 0
+    controller: site/movie-sessions
+  booking_url:
+    path: ^\/booking\-url$
+    isSecure: 0
+    i18n: 0
+    controller: site/booking-url
+  payment:
+    path: ^\/payment$
+    isSecure: 0
+    i18n: 1
+    controller: site/payment
+  payment_success:
+    path: ^\/payment\/success$
+    isSecure: 0
+    i18n: 1
+    controller: site/payment_success
+  payment_failed:
+    path: ^\/payment\/failed$
+    isSecure: 0
+    i18n: 1
+    controller: site/payment_failed
+  
+  admin_order_list:
+    path: ^\/admin\/order\/list$
+    isSecure: 1
+    i18n: 1
+    controller: site/backend/order/list
+
+
+assets:
+  frontend:
+    css:
+      bootstrap:
+        # url pattern to include this asset
+        path: .?
+        # asset position, "top" or "bottom"
+        position: top
+        # asset weight
+        weight: 10
+        # source of this asset, absolute url or relative path to module folder
+        source: //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css
+#      bootstrap_theme:
+#        path: .?
+#        position: top
+#        weight: 30
+#        source: //maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css
+#      fontawesome:
+#        path: .?
+#        position: top
+#        weight: 20
+#        source: //maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css
+#        source: core/assets/font-awesome-4.2.0/css/font-awesome.min.css
+      site:
+        path: .?
+        position: top
+        weight: 40
+        source: site/assets/css/style.css
+
+    js:
+      site:
+        path: .?
+        position: top
+        weight: 20
+        source: site/assets/js/script.js
+      bootstrap:
+        path: .?
+        position: top
+        weight: 10
+        source: //netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js
+#      jquery_payment:
+#        path: .?
+#        position: bottom
+#        weight: 10
+#        source: site/assets/js/jquery.payment.js
+#      credit_card:
+#        path: .?
+#        position: bottom
+#        weight: 20
+#        source: site/assets/js/credit-card.js

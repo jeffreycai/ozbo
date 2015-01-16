@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html lang="en" dir="ltr"><!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="HosterDIY content delivery team">
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/vnd.microsoft.icon" />
+  
+  <title>OZ Movie Booth</title>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript">
+  var site = jQuery();
+  site.settings = [];
+  site.settings.subroot = '';
+</script>
+  
+  <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='/modules/site/assets/css/style.css'>
+  <script type='text/javascript' src='//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+  <script type='text/javascript' src='/modules/site/assets/js/script.js'></script>
+  
+</head>
+
+<body class="home"><nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+        <span class="sr-only">Toggle navbar</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="/" class="navbar-brand blue"><img src="/modules/site/assets/images/logo.jpg" width="30" /> OZ Movie Booth</a>
+    </div>
+    <nav id="navbar" class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li ><a href="/contact">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+                        <li><a href="/en/switch/zh">中文</a></li>
+                      </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</nav>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>OZ Movie Booth</h1>
+      <p>Still pay $20 dollars full price for movie tickets? Buy movie ticket online at OZ Movie Booth with as low as 12 dollars! GST all inclusive! No booking fee, no contract, no hidden cost, no bullshit! Australia only.</p>
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">I want it!</a></p>
+    </div>
+  </div><section id="steps">
+  <div class="container">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Step 1: Choose cinema</h3>
+      </div>
+      <div class="panel-body">
+        <div class="form-group">
+          <label for="state">State</label>
+          <select class="form-control" id="state" name="state">
+            <option selected="selected" value="default">Please select</option>
+            <option value="ACT">ACT</option>
+            <option value="NSW">NSW</option>
+            <option value="NT">NT</option>
+            <option value="QLD">QLD</option>
+            <option value="SA">SA</option>
+            <option value="TAS">TAS</option>
+            <option value="VIC">VIC</option>
+            <option value="WA">WA</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="cinema">Cinema <img src="/modules/site/assets/images/ajax-loader.gif" alt="loading" /></label>
+          <select class="form-control" id="cinema" name="cinema"  disabled="disabled">
+            <option selected="selected" value="default">Please select</option>
+          </select>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        Built with <i class="glyphicon glyphicon-heart"></i> in 2014.  &copy; OZ Movie Booth      </div>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+
+</html>
