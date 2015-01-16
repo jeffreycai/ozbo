@@ -420,10 +420,10 @@
 
         // error handling
         if (typeof data.status == 'undefined' || data.status != 'SUCCESS') {
-          alert("<?php echo i18n(array(
+          swal("<?php echo i18n(array(
               'en' => 'Our ticket booking system is too busy at the moment, please try again later. Thank you for your patience',
               'zh' => '我们的订票系统现在正忙，请稍后再试'
-          )) ?>");
+          )) ?>", '', 'warning');
         } else {
           movies = data.result;
           
@@ -448,10 +448,10 @@
         $("#address").hide();
         $("#cinema").attr("disabled", false);
         
-        alert("<?php echo i18n(array(
+        swal("<?php echo i18n(array(
             'en' => 'Our ticket booking system is too busy at the moment, please try again later. Thank you for your patience',
             'zh' => '我们的订票系统现在正忙，请稍后再试'
-        )) ?>");
+        )) ?>", '', 'warning');
       }
     });
     
@@ -509,30 +509,30 @@
       var ticket = $('#ticket option:selected').val();
       
       if (state == 'default' || typeof state == 'undefined') {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Please select a state',
             'zh' => '请选择您所在的州'
-        )) ?>');
+        )) ?>', '', 'warning');
       } else if (cinema == 'default' || typeof cinema == 'undefined') {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Please select a cinema',
             'zh' => '请选择电影院'
-        )) ?>');
+        )) ?>', '', 'warning');
       } else if (movie == 'default' || typeof movie == 'undefined') {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Please select a movie',
             'zh' => '请选择电影'
-        )) ?>');
+        )) ?>', '', 'warning');
       } else if (session == 'default' || typeof session == 'undefined') {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Please select a session',
             'zh' => '请选择要看的场次'
-        )) ?>');
+        )) ?>', '', 'warning');
       } else if (!ticket.match(/^\d+$/)) {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Please select number of tickets',
             'zh' => '请选择订票数'
-        )) ?>');
+        )) ?>', '', 'warning');
       }
       
       else {
@@ -570,10 +570,10 @@
           data: 'cinema=' + cinema + '&movie=' + movie + '&session=' + session,
           success: function(data){
             if (typeof data != 'object') {
-              alert("<?php echo i18n(array(
+              swal("<?php echo i18n(array(
                       'en' => 'Sorry, the session you selected doesn\'t have any stock',
                       'zh' => '抱歉，您所选的场次没有票了'
-              )); ?>");
+              )); ?>", '', 'warning');
               $("#check").attr("disabled", false).html(original_text);
               $("#steps1 select").attr("disabled", false);
             } else {
@@ -613,10 +613,10 @@
               }
               
               if (our_price == null) {
-                alert("<?php echo i18n(array(
+                swal("<?php echo i18n(array(
                         'en' => 'Sorry, the session you selected doesn\'t have any stock',
                         'zh' => '抱歉，您所选的场次没有票了'
-                )); ?>");
+                )); ?>", '', 'warning');
                 $("#check").attr("disabled", false).html(original_text);;
                 $("#steps1 select").attr("disabled", false);
               }
@@ -655,10 +655,10 @@
             }
           },
           error: function() {
-            alert("<?php echo i18n(array(
+            swal("<?php echo i18n(array(
                     'en' => 'Sorry, the session you selected doesn\'t have any stock',
                     'zh' => '抱歉，您所选的场次没有票了'
-            )); ?>");
+            )); ?>", '', 'warning');
             $("#check").attr("disabled", false).html(original_text);;
             $("#steps1 select").attr("disabled", false);
           }
@@ -675,22 +675,22 @@
       var email_confirm = $("#email_confirm").val();
       // validation
       if (!isEmail(email)) {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Please provide a valid email address',
             'zh' => '请填写合法的邮件地址'
-        )) ?>');
+        )) ?>', '', 'warning');
         $("#email").addClass('has-error');
       } else if (!isEmail(email_confirm)) {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Please provide a valid email address',
             'zh' => '请填写合法的邮件地址'
-        )) ?>');
+        )) ?>', '', 'warning');
         $("#email_confirm").addClass('has-error');
       } else if (email != email_confirm) {
-        alert('<?php echo i18n(array(
+        swal('<?php echo i18n(array(
             'en' => 'Confirm email is different from email. Please make sure they are the same.',
             'zh' => '确认邮件地址和邮件地址不一致，请确保两个邮件地址相同。'
-        )) ?>');
+        )) ?>', '', 'warning');
         $("#email_confirm").addClass('has-error');
         $("#email").addClass('has-error');
       } else {
