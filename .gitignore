@@ -1,2 +1,3 @@
-modules/site/settings.yml
-modules/site/cron/cookie.txt
+/modules/site/settings.yml
+/modules/site/cron/cookie.txt
+/modules/static_cache/cache
