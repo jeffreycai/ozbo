@@ -17,7 +17,8 @@ if (isset($custom_modules)) {
       'log',
       'form',
       'site',
-      'outdated-browser'
+      'outdated-browser',
+      'mail'
   );
 
 }
