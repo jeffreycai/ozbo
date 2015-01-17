@@ -71,6 +71,9 @@ if (is_null($token)) {
     $log = new Log('stripe', Log::SUCCESS, 'Strip: 2. API call successful. Credit card charged.', $_SERVER['REMOTE_ADDR']);
     $log->save();
     
+    
+    
+    
     // store the order in db
     $order = new TicketOrder();
     $order->setToken($token);
@@ -87,6 +90,11 @@ if (is_null($token)) {
     $order->setIp($_SERVER['REMOTE_ADDR']);
     $order->setLanguage($lang);
     $order->save();
+    
+    sendemailAdmin(
+            ENV == 'prod' ? 'New transaction' : 'DEV: New transaction',
+            str_replace("\n", '<br />', "<p>$description</p><p><strong>ID: </strong>" . $order->getId() . "</p>")
+    );
     
     if ($order && $order->getId()) {
       // store in session so that the payment_success page knows

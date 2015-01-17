@@ -177,10 +177,6 @@ function load_library_wide_image() {
   require_once  WEBROOT . DS . 'modules' . DS . 'core' . DS . 'includes' . DS . 'libraries' . DS . 'wideimage' . DS . 'lib' . DS . 'WideImage.php';
 }
 
-function load_library_phpmailer() {
-  require_once WEBROOT . DS . 'modules' . DS . 'core' . DS . 'includes' . DS . 'libraries' . DS . 'PHPMailer' . DS . 'PHPMailerAutoload.php';
-}
-
 function resetSpamTokens() {
   $_SESSION['spam_key'] = generateRandomChars();
   $_SESSION['spam_val'] = generateRandomChars();

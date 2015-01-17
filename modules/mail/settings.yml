@@ -1,0 +1,13 @@
+mail:
+  # conf for email sending to amdin
+  admin:
+    to: jeffreycaizhenyuan@gmail.com
+    from: bluestreamjc@tpg.com.au
+    mailer: smtp
+    SMTPSecure: tls
+    host: mail.tpg.com.au
+    port: 587
+    username: bluestreamjc@tpg.com.au
+    nickname: My TPG Mailbox
+    password: Monday01
+    
