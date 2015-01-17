@@ -4,13 +4,13 @@ routing:
     isSecure: 0
     i18n: 1
     controller: site/index
-    static_cache: 900
+    static_cache: 3600
   contact:
     path: ^\/contact$
     isSecure: 0
     i18n: 1
     controller: site/contact
-    static_cache: 300
+    static_cache: 99999
   movie_session:
     path: ^\/movie\-sessions$
     isSecure: 0
