@@ -1,9 +1,13 @@
 <section>
   <div class="container">
     <h2><?php echo i18n(array(
-        'en' => 'We are very sorry, but your payment is declined.<br />No payment has be made.',
-        'zh' => '十分抱歉，您的支付请求被拒绝了<br />我们没有对您的信用卡收取费用'
+        'en' => 'We are very sorry, but your payment is declined.',
+        'zh' => '十分抱歉，您的支付请求被拒绝了'
     )) ?></h2>
+    <p><?php echo i18n(array(
+        'en' => 'No payment is taken from your credit card.',
+        'zh' => '我们没有向您的信用卡收取任何费用。'
+    )) ?></p>
     <h3><?php echo i18n(array(
         'en' => '"What? How??"',
         'zh' => '"什么？怎么可能？？"'
