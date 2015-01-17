@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
   } else {
     $comment = "<p>Name: <br />$name<br /><br />" . "Email: <br />$email<br /><br />" . "Comment: <br />" . str_replace("\n", "<br />", $comment) . "</p>";
 
-    sendemailAdmin('New message from ' . $settings['sitename']['plain'][get_language()], $comment);
+    sendemailAdmin( (ENV == 'prod' ? '' : 'Dev: ') . 'New message from ' . $settings['sitename']['plain'][get_language()], $comment);
 
     $message = new Message(Message::SUCCESS, i18n(array('en' => 'Thanks for your contact :) We\'ll keep in touch', 'zh' => '谢谢您的留言，我们会及时和您联系的')));
     Message::register($message);

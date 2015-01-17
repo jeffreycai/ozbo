@@ -24,7 +24,7 @@ function sendemailAdmin($subject, $msg) {
     $mail->Password   = $settings['mail']['admin']['password'];            // GMAIL password
     $mail->AddReplyTo($settings['mail']['admin']['to']);
     $mail->AddAddress($settings['mail']['admin']['to']);
-    $mail->SetFrom($settings['mail']['admin']['from']);
+    $mail->SetFrom($settings['mail']['admin']['from'], $settings['mail']['admin']['nickname']);
     $mail->Subject = $subject;
     $mail->MsgHTML($msg);
     $mail->Send();
