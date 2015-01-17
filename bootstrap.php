@@ -23,8 +23,8 @@ if (isset($custom_modules)) {
 
 }
 
-define('ENV', 'dev');
-//define('ENV', 'prod');
+//define('ENV', 'dev');
+define('ENV', 'prod');
 
 // error reporting
 error_reporting(E_DEPRECATED | E_USER_DEPRECATED | E_STRICT | E_ALL);

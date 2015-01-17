@@ -23,12 +23,10 @@ if (isset($_POST['submit'])) {
     Message::register($message);
   // validation passed, send email
   } else {
-    $comment = "Name: \n$name\n\n" . "Email: \n$email\n\n" . "Comment: \n$comment";
-    $comment = wordwrap($comment, 70, "\n");
-    $header = "From: " . $settings['sitename']['plain'][get_language()] . "<" . $settings['contact_email_from'] . ">" . "\r\n" .
-    'Reply-To: ' . $settings['contact_email_reply'] . "\r\n" .
-    "X-Mailer: PHP/" . phpversion();
-    mail($settings['contact_email_to'], 'New message from ' . $settings['sitename']['plain'][get_language()], $comment, $header);
+    $comment = "<p>Name: <br />$name<br /><br />" . "Email: <br />$email<br /><br />" . "Comment: <br />" . str_replace("\n", "<br />", $comment) . "</p>";
+
+    sendemailAdmin('New message from ' . $settings['sitename']['plain'][get_language()], $comment);
+
     $message = new Message(Message::SUCCESS, i18n(array('en' => 'Thanks for your contact :) We\'ll keep in touch', 'zh' => '谢谢您的留言，我们会及时和您联系的')));
     Message::register($message);
   }
