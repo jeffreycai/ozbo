@@ -26,7 +26,7 @@ $response = 'failed';
 if (is_null($token)) {
   $response = "failed";
 
-  $log = new Log('site', Log::ERROR, 'Stripe token missing');
+  $log = new Log('stripe', Log::ERROR, 'Stripe token missing');
   $log->save();
 // if yes, call stripe API for peyment
 } else {
@@ -58,7 +58,7 @@ if (is_null($token)) {
   
   // Create the charge on Stripe's servers - this will charge the user's card
   try {
-    $log = new Log('site', Log::NOTICE, 'Strip: 1. Calling Stripe API with fields - ' . serialize($description), $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::NOTICE, 'Strip: 1. Calling Stripe API with fields - ' . serialize($description), $_SERVER['REMOTE_ADDR']);
     $log->save();
 
     // call Stripe API to charge
@@ -68,7 +68,7 @@ if (is_null($token)) {
       "card" => $token,
       "description" => $description)
     );
-    $log = new Log('site', Log::SUCCESS, 'Strip: 2. API call successful. Credit card charged.', $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::SUCCESS, 'Strip: 2. API call successful. Credit card charged.', $_SERVER['REMOTE_ADDR']);
     $log->save();
     
     // store the order in db
@@ -93,12 +93,12 @@ if (is_null($token)) {
       $_SESSION['order_id'] = $order->getId();
       $response = "success";
       
-      $log = new Log('site', Log::SUCCESS, 'Strip: 3. Order stored in local db.', $_SERVER['REMOTE_ADDR']);
+      $log = new Log('stripe', Log::SUCCESS, 'Strip: 3. Order stored in local db.', $_SERVER['REMOTE_ADDR']);
       $log->save();
     } else {
       $response = "failed";
       
-      $log = new Log('site', Log::ERROR, 'Strip: 3. Order failed to store in local db.', $_SERVER['REMOTE_ADDR']);
+      $log = new Log('stripe', Log::ERROR, 'Strip: 3. Order failed to store in local db.', $_SERVER['REMOTE_ADDR']);
       $log->save();
     }
   } catch(Stripe_CardError $e) {
@@ -109,33 +109,33 @@ if (is_null($token)) {
     $body = $e->getJsonBody();
     $err = $body['error'];
     
-    $log = new Log('site', Log::ERROR, 'Strip: 2. API call failed. Credit card not charged. Details: Status is: "' . $e->getHttpStatus() . '" Type is: "' . $err['type'] . '" Code is: "' . $err['code'] . '" Param is: "' . $err['param'] . '" Message is: "' . '" ' . $err['message'], $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::ERROR, 'Strip: 2. API call failed. Credit card not charged. Details: Status is: "' . $e->getHttpStatus() . '" Type is: "' . $err['type'] . '" Code is: "' . $err['code'] . '" Param is: "' . $err['param'] . '" Message is: "' . '" ' . $err['message'], $_SERVER['REMOTE_ADDR']);
     $log->save();
   } catch (Stripe_InvalidRequestError $e) {
     // Invalid parameters were supplied to Stripe's API
     $response = "failed";
-    $log = new Log('site', Log::ERROR, 'Stripe Invalid Request Error', $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::ERROR, 'Stripe Invalid Request Error', $_SERVER['REMOTE_ADDR']);
     $log->save();
   } catch (Stripe_AuthenticationError $e) {
     // Authentication with Stripe's API failed 
     // (maybe you changed API keys recently)
     $response = "failed";
-    $log = new Log('site', Log::ERROR, 'Stripe Authentication Error', $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::ERROR, 'Stripe Authentication Error', $_SERVER['REMOTE_ADDR']);
     $log->save();
   } catch (Stripe_ApiConnectionError $e) {
     // Network communication with Stripe failed 
     $response = "failed";
-    $log = new Log('site', Log::ERROR, 'Stripe API Connection Error', $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::ERROR, 'Stripe API Connection Error', $_SERVER['REMOTE_ADDR']);
     $log->save();
   } catch (Stripe_Error $e) {
     // Display a very generic error to the user, and maybe send
     $response = "failed";
-    $log = new Log('site', Log::ERROR, 'Stripe Error', $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::ERROR, 'Stripe Error', $_SERVER['REMOTE_ADDR']);
     $log->save();
   } catch (Exception $e) {
     // Something else happened, completely unrelated to Stripe
     $response = "failed";
-    $log = new Log('site', Log::ERROR, 'Unknown error', $_SERVER['REMOTE_ADDR']);
+    $log = new Log('stripe', Log::ERROR, 'Unknown error', $_SERVER['REMOTE_ADDR']);
     $log->save();
   }
   
