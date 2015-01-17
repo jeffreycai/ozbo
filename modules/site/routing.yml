@@ -10,7 +10,6 @@ routing:
     isSecure: 0
     i18n: 1
     controller: site/contact
-    static_cache: 99999
   movie_session:
     path: ^\/movie\-sessions$
     isSecure: 0

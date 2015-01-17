@@ -16,6 +16,7 @@ function sendemailAdmin($subject, $msg) {
 //    $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
     $mail->Mailer = $settings['mail']['admin']['mailer'];
     $mail->SMTPAuth   = true;                  // enable SMTP authentication
+    $mail->CharSet = 'UTF-8';
     $mail->SMTPSecure = $settings['mail']['admin']['SMTPSecure'];                 // sets the prefix to the servier
     $mail->Host       = $settings['mail']['admin']['host'];      // sets GMAIL as the SMTP server
     $mail->Port       = $settings['mail']['admin']['port'];                   // set the SMTP port for the GMAIL server

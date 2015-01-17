@@ -3,3 +3,4 @@
 /modules/static_cache/cache/*
 /.htaccess
 /modules/database/bootstrap.php
+/bootstrap.php
