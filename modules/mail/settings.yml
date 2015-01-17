@@ -1,7 +1,7 @@
 mail:
   # conf for email sending to amdin
   admin:
-    to: jeffreycaizhenyuan@gmail.com
+    to: ozboxoffice@gmail.com
     from: bluestreamjc@tpg.com.au
     mailer: smtp
     SMTPSecure: tls
