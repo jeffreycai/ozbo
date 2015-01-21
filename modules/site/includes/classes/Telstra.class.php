@@ -95,8 +95,8 @@ class Telstra {
       $var->setName('states');
       $var->setValue($states);
       if ($var->save()) {
-        $log = new Log('cron', Log::SUCCESS, 'Telstra Cinema cron finishes.');
-        $log->save();
+//        $log = new Log('cron', Log::SUCCESS, 'Telstra Cinema cron finishes.');
+//        $log->save();
       } else {
         $log = new Log('cron', Log::ERROR, 'Telstra Cinema cron fails');
         $log->save();
