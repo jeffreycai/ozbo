@@ -133,9 +133,9 @@ COLLATE = utf8_general_ci;
     return $rtn;
   }
   
-  static function findAllWithPage($page, $entries_per_page) {
+  static function findAllWithPage($page, $entries_per_page, $order_by = 'time', $order = 'DESC') {
     global $mysqli;
-    $query = "SELECT * FROM log LIMIT " . ($page - 1) * $entries_per_page . ", " . $entries_per_page;
+    $query = "SELECT * FROM log ORDER BY $order_by $order LIMIT " . ($page - 1) * $entries_per_page . ", " . $entries_per_page;
     $result = $mysqli->query($query);
     
     $rtn = array();
