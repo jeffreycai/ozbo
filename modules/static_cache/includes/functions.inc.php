@@ -34,6 +34,7 @@ function buffer_flush() {
 
         if ($isSecure && !$user->isLogin()) {
           dispatch('core/login');
+          echo $content;
           exit;
         } else {
 
