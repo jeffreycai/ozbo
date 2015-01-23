@@ -17,7 +17,7 @@ if ($command == 'cc') {
 }
 
 //-- Import DB
-if ($command == 'import' && $arg1 == 'db') {
+if ($command == 'import' && $arg1 == 'db' && (is_null($arg2) || $arg2 == 'core')) {
   echo " - Create table 'vars' ";
   echo Vars::createTableIfNotExist() ? "success\n" : "fail\n";
   
@@ -26,7 +26,7 @@ if ($command == 'import' && $arg1 == 'db') {
 }
 
 //-- Import Fixture
-if ($command == 'import' && $arg1 == 'fixture') {
+if ($command == 'import' && $arg1 == 'fixture'  && (is_null($arg2) || $arg2 == 'user')) {
   User::importFixture();
   echo " - Import fixture for User\n";
 }
