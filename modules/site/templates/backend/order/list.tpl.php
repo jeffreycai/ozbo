@@ -21,33 +21,31 @@ $end_entry = min(array($total, $current_page*$settings['backend_per_page']));
 <table class="table table-striped table-bordered table-hover dataTable no-footer">
   <thead>
       <tr role="row">
-        <th>ID</th>
+        <th><?php i18n_echo(array('en' => 'Created', 'zh' => '订票时间')) ?></th>
         <th><?php i18n_echo(array('en' => 'State', 'zh' => '州')) ?></th>
         <th><?php i18n_echo(array('en' => 'Cinema', 'zh' => '电影院')) ?></th>
         <th><?php i18n_echo(array('en' => 'Movie', 'zh' => '电影')) ?></th>
         <th><?php i18n_echo(array('en' => 'Session', 'zh' => '场次')) ?></th>
-        <th><?php i18n_echo(array('en' => '# Ticket', 'zh' => '票数')) ?></th>
+        <th><?php i18n_echo(array('en' => '#', 'zh' => '#')) ?></th>
         <!--<th><?php i18n_echo(array('en' => 'Prices', 'zh' => '所有价格')) ?></th>-->
         <th><?php i18n_echo(array('en' => 'Our price', 'zh' => '我们的价格')) ?></th>
         <th><?php i18n_echo(array('en' => 'Total', 'zh' => '总金额')) ?></th>
         <!--<th><?php i18n_echo(array('en' => 'Email', 'zh' => '电子邮箱')) ?></th>-->
-        <th><?php i18n_echo(array('en' => 'Created', 'zh' => '订票时间')) ?></th>
       </tr>
   </thead>
   <tbody>
     <?php foreach ($orders as $order): ?>
     <tr>
-      <td><?php echo $order->getId(); ?></td>
+      <td><?php echo time_ago($order->getCreatedAt()); ?></td>
       <td><?php echo $order->getState(); ?></td>
       <td><?php echo $order->getCinema(); ?></td>
       <td><?php echo $order->getMovie(); ?></td>
       <td><?php echo $order->getSession(); ?></td>
       <td><?php echo $order->getNumTicket(); ?></td>
-      <!--<td><?php echo $order->getPrices(); ?></td>-->
-      <td><?php echo $order->getOurPrice(); ?></td>
-      <td><?php echo $order->getTotal(); ?></td>
+      <!--<td><?php echo '$' . $order->getPrices(); ?></td>-->
+      <td><?php echo '$' . $order->getOurPrice(); ?></td>
+      <td><?php echo '$' . $order->getTotal(); ?></td>
       <!--<td><?php echo $order->getEmail(); ?></td>-->
-      <td><?php echo $order->getCreatedAt(true); ?></td>
     </tr>
     <?php endforeach; ?>
   </tbody>

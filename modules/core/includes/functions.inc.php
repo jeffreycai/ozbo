@@ -145,12 +145,14 @@ function echo_link_active_class($active_url, $current_url, $class='active') {
 
 /**
  * convert a time stamp to time ago
- * 
- * @param type $ptime
  * @return string
  */
-function time_ago($ptime) {
-  $etime = time() - $ptime;
+function time_ago($start_point, $end_point = null) {
+  if ($end_point == null) {
+    $end_point = time();
+  }
+  
+  $etime = $end_point - $start_point;
   if ($etime < 1) {
     return '0 seconds';
   }

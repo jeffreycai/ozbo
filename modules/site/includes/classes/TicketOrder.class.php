@@ -200,9 +200,9 @@ COLLATE = utf8_general_ci;
     return $rtn;
   }
   
-  static function findAllWithPage($page, $entries_per_page) {
+  static function findAllWithPage($page, $entries_per_page, $order_by = 'created_at', $order = 'DESC') {
     global $mysqli;
-    $query = "SELECT * FROM ticket_order LIMIT " . ($page - 1) * $entries_per_page . ", " . $entries_per_page;
+    $query = "SELECT * FROM ticket_order ORDER BY $order_by $order LIMIT " . ($page - 1) * $entries_per_page . ", " . $entries_per_page;
     $result = $mysqli->query($query);
     
     $rtn = array();

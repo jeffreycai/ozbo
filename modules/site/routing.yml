@@ -35,6 +35,12 @@ routing:
     isSecure: 0
     i18n: 1
     controller: site/payment_failed
+  booking:
+    path: ^\/book-ticket$
+    isSecure: 0
+    i18n: 1
+    controller: site/booking
+    static_cache: 3600
   
   admin_order_list:
     path: ^\/admin\/order\/list$

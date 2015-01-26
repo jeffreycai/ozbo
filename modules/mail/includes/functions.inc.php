@@ -29,14 +29,19 @@ function sendemailAdmin($subject, $msg) {
     $mail->MsgHTML($msg);
     $mail->Send();
     
-    if (class_exists('Log')) {
-      $log = new Log('mail', Log::SUCCESS, 'Send email to admin');
+//    if (class_exists('Log')) {
+//      $log = new Log('mail', Log::SUCCESS, 'Send email to admin');
+//      $log->save();
+//    }
+  } catch (phpmailerException $e) {
+    if (module_enabled('Log')) {
+      $log = new Log('mail', Log::ERROR, 'Failed to send email: ' . $e->errorMessage());
       $log->save();
     }
-  } catch (phpmailerException $e) {
-    $log = new Log('mail', Log::ERROR, 'Failed to send email: ' . $e->errorMessage());
-    $log->save();
   } catch (Exception $e) {
-    $log = new Log('mail', Log::ERROR, 'Failed to send email: ' . $e->getMessage());
+    if (module_enabled('Log')) {
+      $log = new Log('mail', Log::ERROR, 'Failed to send email: ' . $e->getMessage());
+      $log->save();
+    }
   }
 }
