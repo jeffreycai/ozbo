@@ -25,6 +25,7 @@ include_once MODULESROOT . DS . 'core' . DS . 'includes' . DS . 'classes' . DS .
  * - imdbid
  * - type
  * - created_at
+ * - updated_at
  */
 class Movie extends DBObject {
   /**
@@ -177,6 +178,15 @@ class Movie extends DBObject {
   public function getCreatedAt() {
     return $this->getDbFieldCreated_at();
   }
+  public function setUpdatedAt($t) {
+    $this->setDbFieldUpdated_at($t);
+  }
+  public function getUpdatedAt($format = null) {
+    if ($format) {
+      return date($format, $this->getDbFieldUpdated_at());
+    }
+    return $this->getDbFieldUpdated_at();
+  }
   
   
   /**
@@ -212,13 +222,15 @@ CREATE TABLE IF NOT EXISTS `movie` (
   `country` VARCHAR(15) ,
   `awards` VARCHAR(512) ,
   `poster` VARCHAR(256) ,
-  `metascroe` TINYINT ,
+  `metascore` TINYINT ,
   `imdbrating` VARCHAR(4) ,
   `imdbvotes` VARCHAR(10) ,
   `imdbid` VARCHAR(10) ,
   `type` VARCHAR(10) ,
   `created_at` INT ,
-  PRIMARY KEY (`id`))
+  `updated_at` INT ,
+  PRIMARY KEY (`id`) ,
+  INDEX `search_title` (`search_title` ASC))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
@@ -231,6 +243,18 @@ COLLATE = utf8_general_ci;
   static function findById($id, $instance = 'Movie') {
     global $mysqli;
     $query = 'SELECT * FROM movie WHERE id=' . $id;
+    $result = $mysqli->query($query);
+    if ($result && $b = $result->fetch_object()) {
+      $movie = new $instance();
+      DBObject::importQueryResultToDbObject($b, $movie);
+      return $movie;
+    }
+    return null;
+  }
+  
+  static function findBySearchTitle($t, $instance = 'Movie') {
+    global $mysqli;
+    $query = 'SELECT * FROM movie WHERE search_title=' . DBObject::prepare_val_for_sql($t);
     $result = $mysqli->query($query);
     if ($result && $b = $result->fetch_object()) {
       $movie = new $instance();
@@ -255,7 +279,7 @@ COLLATE = utf8_general_ci;
     return $rtn;
   }
   
-  static function findAllWithPage($page, $entries_per_page, $order_by = 'created_at', $order = 'DESC') {
+  static function findAllWithPage($page, $entries_per_page, $order_by = 'updated_at', $order = 'DESC') {
     global $mysqli;
     $query = "SELECT * FROM movie ORDER BY $order_by $order LIMIT " . ($page - 1) * $entries_per_page . ", " . $entries_per_page;
     $result = $mysqli->query($query);
@@ -276,5 +300,29 @@ COLLATE = utf8_general_ci;
     if ($result = $mysqli->query($query)) {
       return $result->fetch_object()->count;
     }
+  }
+  
+  static function logAMovieForLaterAPICrawl($search_title) {
+    if (Movie::findBySearchTitle($search_title) == null) {
+      $movie = new Movie();
+      $movie->setSearchTitle($search_title);
+      $movie->setCreatedAt(time());
+      $movie->save();
+    }
+  }
+  
+  static function findAllToPopulate() {
+    global $mysqli;
+    $query = "SELECT * FROM movie WHERE updated_at IS NULL";
+    $result = $mysqli->query($query);
+    
+    $rtn = array();
+    while ($result && $b = $result->fetch_object()) {
+      $movie = new Movie();
+      DBObject::importQueryResultToDbObject($b, $movie);
+      $rtn[] = $movie;
+    }
+    
+    return $rtn;
   }
 }
