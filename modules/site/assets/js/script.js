@@ -1,14 +1,13 @@
 jQuery(function($){
 
   /* homepage scroll */
+  /*
   $('.home .jumbotron .btn').click(function(event){
     event.preventDefault();
     scrollTo($('#steps1'));
   });
+  */
   
-  /* booking form modals */
-//  $("#ticketModalFailed").modal();
-//  $("#ticketModalSuccess").modal();
 
   /**
    * Scroll to an element
