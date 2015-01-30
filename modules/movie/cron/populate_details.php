@@ -10,15 +10,15 @@
 require_once __DIR__ . '/../../../bootstrap.php';
 
 foreach (Movie::findAllToPopulate() as $movie) {
+  $movie->setUpdatedAt(time());
+  $movie->save();
+  
   $crawler = new Crawler();
   $result = $crawler->read('http://www.omdbapi.com/?t=' . urlencode($movie->getSearchTitle()) . '&y=&plot=full&r=json');
   $result = json_decode($result);
   
   if (is_object($result)) {
     if ($result->Response == 'False') {
-      $movie->setUpdatedAt(time());
-      $movie->save();
-      
       $message = 'Failed to get details for movie #' . $movie->getId() . ' - ' . $movie->getSearchTitle();
       $log = new Log('movie', Log::NOTICE, $message);
       $log->save();
@@ -42,9 +42,6 @@ foreach (Movie::findAllToPopulate() as $movie) {
     }
 
     if ($result = $movie->save()) {
-      $movie->setUpdatedAt(time());
-      $movie->save();
-      
       // copy remote image to local
       if ($movie->isPopulated()) {
         $tokens = explode('.', $movie->getPoster());
