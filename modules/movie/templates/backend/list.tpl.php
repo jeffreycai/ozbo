@@ -32,7 +32,7 @@ $end_entry = min(array($total, $current_page*$settings['movie']['backend_per_pag
     <tr>
       <td><?php echo $movie->getId(); ?></td>
       <td><?php echo $movie->getSearchTitle() ?></td>
-      <td><?php echo $movie->getReleased() ? $movie->getReleased() : 'N/A'; ?></td>
+      <td><?php echo $movie->getReleased() ? $movie->getReleased('Y/m/d') : 'N/A'; ?></td>
       <td><?php echo $movie->getUpdatedAt('Y-m-d H:i:s'); ?></td>
     </tr>
     <?php endforeach; ?>
