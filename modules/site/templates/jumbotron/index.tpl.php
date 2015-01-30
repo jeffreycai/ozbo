@@ -5,9 +5,13 @@
       <p><?php echo $settings['sitename']['slogon'][get_language()] ?></p>
       
       <?php if (!is_maintenance()): ?>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button"><?php echo i18n(array(
+<!--      <p><a class="btn btn-primary btn-lg" href="#" role="button"><?php echo i18n(array(
           'en' => 'I want it!',
           'zh' => '我要我要!'
+      )); ?></a></p>-->
+      <p><a class="btn btn-primary btn-lg" href="<?php echo uri('booking') ?>" role="button"><?php echo i18n(array(
+          'en' => 'Book a ticket now!',
+          'zh' => '现在就订票！'
       )); ?></a></p>
       <?php endif; ?>
       
