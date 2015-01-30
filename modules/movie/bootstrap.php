@@ -1,4 +1,11 @@
 <?php
+define('MOVIE_POST_PATH', MODULESROOT . DS . 'movie' . DS . 'posters');
+
+if (!is_writable(MOVIE_POST_PATH)) {
+  die('Movie poster dir needs to be writable.');
+}
+
+
 $user = User::getInstance();
 if (!is_cli() && $user->isLogin() && is_backend()) {
   

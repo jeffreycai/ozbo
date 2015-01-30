@@ -18,6 +18,10 @@
             'en' => 'Home',
             'zh' => '首页'
         )) ?></a></li>
+        <li <?php if (isset($active_url) && in_array('/booking', $active_url)): ?>class="active"<?php endif; ?>><a href="/booking"><?php echo i18n(array(
+            'en' => 'Booking',
+            'zh' => '订票'
+        )) ?></a></li>
         <li <?php if (isset($active_url) && in_array('/contact', $active_url)): ?>class="active"<?php endif; ?>><a href="/contact"><?php echo i18n(array(
             'en' => 'Contact',
             'zh' => '联系'

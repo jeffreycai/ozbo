@@ -34,3 +34,4 @@ function isEmail(email) {
   var regex = /^[^\@]+\@[^\@]+\.[^\@]+$/;
   return regex.test(email);
 }
+

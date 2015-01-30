@@ -79,7 +79,11 @@ class Movie extends DBObject {
   public function setReleased($r) {
     $this->setDbFieldReleased($r);
   }
-  public function getReleased() {
+  public function getReleased($format = false) {
+    if ($format) {
+      return date($format, $this->getDbFieldReleased());
+    }
+    
     return $this->getDbFieldReleased();
   }
   public function setRuntime($r) {
@@ -210,8 +214,8 @@ CREATE TABLE IF NOT EXISTS `movie` (
   `search_title` VARCHAR(255) NOT NULL ,
   `title` VARCHAR(255) NOT NULL ,
   `year` VARCHAR(4) ,
-  `rated` VARCHAR(2) ,
-  `released` VARCHAR(32) ,
+  `rated` VARCHAR(4) ,
+  `released` INT ,
   `runtime` VARCHAR(32) ,
   `genre` VARCHAR(128) ,
   `director` VARCHAR(128) ,
@@ -230,7 +234,8 @@ CREATE TABLE IF NOT EXISTS `movie` (
   `created_at` INT ,
   `updated_at` INT ,
   PRIMARY KEY (`id`) ,
-  INDEX `search_title` (`search_title` ASC))
+  INDEX `search_title` (`search_title` ASC) ,
+  INDEX `imdbid` (`imdbid` ASC))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_general_ci;
@@ -324,5 +329,64 @@ COLLATE = utf8_general_ci;
     }
     
     return $rtn;
+  }
+  
+  static function findAllValid() {
+    global $mysqli;
+    $query = "SELECT * FROM movie WHERE title != '' AND title IS NOT NULL ORDER BY released DESC";
+    $result = $mysqli->query($query);
+    
+    $rtn = array();
+    while ($result && $b = $result->fetch_object()) {
+      $movie = new Movie();
+      DBObject::importQueryResultToDbObject($b, $movie);
+      $rtn[] = $movie;
+    }
+    
+    return $rtn;
+  }
+  
+  static function findAllIMDBId($id) {
+    global $mysqli;
+    $query = "SELECT * FROM movie WHERE imdbid = " . $id;
+    $result = $mysqli->query($query);
+    
+    if ($result && $b = $result->fetch_object()) {
+      $movie = new Movie();
+      DBObject::importQueryResultToDbObject($b, $movie);
+      return $movie;
+    }
+    return null;
+  }
+  
+  static function findByIMDBId($id) {
+    global $mysqli;
+    $query = 'SELECT * FROM movie WHERE imdbid=' . DBObject::prepare_val_for_sql($id);
+    $result = $mysqli->query($query);
+    if ($result && $b = $result->fetch_object()) {
+      $movie = new Movie();
+      DBObject::importQueryResultToDbObject($b, $movie);
+      return $movie;
+    }
+    return null;
+  }
+  
+  public function isPopulated() {
+    $title = $this->getDbFieldTitle();
+    return !empty($title);
+  }
+  
+  public function delete() {
+    // we delete the poster file first
+    $local_poster_path = MOVIE_POST_PATH . DS . $this->getPoster();
+    if (is_file($local_poster_path)) {
+      unlink($local_poster_path);
+    }
+    
+    return parent::delete();
+  }
+  
+  public function getPosterUri() {
+    return "/modules/movie/posters/" . ($this->getPoster() ? $this->getPoster() : 'default.jpg');
   }
 }
