@@ -4,4 +4,3 @@ routing:
     isSecure: 1
     i18n: 1
     controller: movie/backend/list
-    static_cache: 999999
