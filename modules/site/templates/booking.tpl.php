@@ -340,6 +340,10 @@
   var states = <?php echo json_encode($states); ?>;
   
   // step 1 ajax to build cinema options
+  if ($("#state option:selected").val() != 'default') {
+    $("#state").change();
+  }
+  
   $("#state").change(function(){
     var state = $('option:selected', $(this)).val();
     
