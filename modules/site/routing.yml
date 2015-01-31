@@ -45,6 +45,7 @@ routing:
     isSecure: 0
     i18n: 1
     controller: site/movie/details
+    static_cache: 99999
   
   admin_order_list:
     path: ^\/admin\/order\/list$
