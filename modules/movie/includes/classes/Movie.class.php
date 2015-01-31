@@ -331,9 +331,9 @@ COLLATE = utf8_general_ci;
     return $rtn;
   }
   
-  static function findAllValid() {
+  static function findAllValid($how_long_ago = null) {
     global $mysqli;
-    $query = "SELECT * FROM movie WHERE title != '' AND title IS NOT NULL ORDER BY released DESC";
+    $query = "SELECT * FROM movie WHERE title != '' AND title IS NOT NULL " . ($how_long_ago ? "AND released > " . $how_long_ago : "") . " ORDER BY released DESC";
     $result = $mysqli->query($query);
     
     $rtn = array();

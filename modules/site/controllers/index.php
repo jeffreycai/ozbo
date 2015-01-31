@@ -12,7 +12,7 @@ if (is_maintenance()) {
   $html->renderOut('site/maintenance');
 } else {
   $html->renderOut('site/index', array(
-      'movies' => Movie::findAllValid()
+      'movies' => Movie::findAllValid(time() - (60 * 60 * 24 * $settings['movie']['back_track_how_long']))
   ));
 }
 $html->renderOut('site/footer');

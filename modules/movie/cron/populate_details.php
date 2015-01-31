@@ -33,6 +33,10 @@ foreach (Movie::findAllToPopulate() as $movie) {
       if (method_exists($movie, $method)) {
         // special case for "released" field
         if (strtolower($method) == 'setreleased') {
+          if (empty($val) || $val < (time() - (60 * 60 * 24 * $settings['movie']['back_track_how_long']))) {
+            
+          }
+          
           $movie->setReleased(strtotime($val));
         // for other occations
         } else {
