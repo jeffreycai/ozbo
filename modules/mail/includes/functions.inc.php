@@ -25,7 +25,7 @@ function sendemailAdmin($subject, $msg) {
     $mail->AddReplyTo($settings['mail']['admin']['to']);
     $mail->AddAddress($settings['mail']['admin']['to']);
     $mail->SetFrom($settings['mail']['admin']['from'], $settings['mail']['admin']['nickname']);
-    $mail->Subject = $subject;
+    $mail->Subject = (ENV == 'prod' ? '' : 'DEV: ') . $subject;
     $mail->MsgHTML($msg);
     $mail->Send();
     
