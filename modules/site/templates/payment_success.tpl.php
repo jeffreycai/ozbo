@@ -1,13 +1,13 @@
 <section>
   <div class="container">
     <h2><?php echo i18n(array(
-        'en' => 'Thanks you for buying tickets from us',
-        'zh' => '感谢您购买我们的电影票'
+        'en' => 'Thanks you for buying tickets from us. <br />Your ticket will be mailed to you in next ' . $settings['process_time'] . ' hours',
+        'zh' => '感谢您购买我们的电影票。<br />您的电子票会在' . $settings['process_time'] . '小时内邮寄到您的电子邮箱'
     )) ?></h2>
     <br />
     <p><?php echo i18n(array(
-          'en' => 'We are processing your booking right now. You\'ll receive your ticket in your mailbox: ' . $order->getEmail() . ' soon.',
-          'zh' => '我们正在处理您的订票业务，电影票会在处理完毕后发送到您的邮箱：' . $order->getEmail()
+          'en' => 'Please check your junk mail box if not received. <strong>All e-tickets are not refoundable.</strong>',
+          'zh' => '如果您没有收到电子票，请查看是否被过滤进垃圾邮件。 <strong>所有的电子票恕不退款</strong>。'
       )) ?>
     </p>
     <p><?php echo i18n(array(

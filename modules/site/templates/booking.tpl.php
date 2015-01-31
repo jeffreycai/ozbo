@@ -473,7 +473,12 @@
               )) ?></option>";
       for (idx in sessions) {
         var session = sessions[idx];
-        
+        var today = new Date();
+        var dd = today.getDate();
+        var expr = new RegExp("^0?" + dd,"g");
+        if (session.startTime.match(expr)) {
+          continue;
+        }
         options += "<option value='" + idx + "'" + ">" + session.startTime + "</option>";
       }
 
