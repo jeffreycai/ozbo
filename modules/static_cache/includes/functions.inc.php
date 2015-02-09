@@ -10,6 +10,7 @@ function buffer_flush() {
   if (ENV == 'prod' && $static_cache_enabled && PHP_SAPI != 'cli') {
 
     $content = ob_get_clean();
+    ob_end_clean();
     
 
     $relative_uri;
