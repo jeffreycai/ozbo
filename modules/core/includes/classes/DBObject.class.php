@@ -137,6 +137,7 @@ abstract class DBObject {
 //      $id = array_pop($this->primary_key);
 //      $this->{"db_field_" . $id} = $mysqli->insert_id;
 //    }
+
     return $result;
   }
   
