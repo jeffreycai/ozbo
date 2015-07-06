@@ -4,3 +4,4 @@
 /.htaccess
 /modules/database/bootstrap.php
 /bootstrap.php
+/modules/movie/posters/*

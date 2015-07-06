@@ -5,9 +5,8 @@ mail:
     from: bluestreamjc@tpg.com.au
     mailer: smtp
     SMTPSecure: tls
-    host: mail.tpg.com.au
+    host: smtp.mandrillapp.com
     port: 587
-    username: bluestreamjc@tpg.com.au
-    nickname: My TPG Mailbox
-    password: Monday01
-    
+    username: jeangirl186@163.com
+    nickname: OzBoxOffice
+    password: bHw0jZxX9Kb4QrMqIYY-fg
